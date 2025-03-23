@@ -56,3 +56,4 @@ amazon.co.jpドメインのWebサイト(以降、Amazonと呼びます)は、ア
 |14|https://www.amazon.co.jp/Elements-Style/dp/product-description/020530902X|`https://www.amazon.co.jp/dp/020530902X` へリダイレクト|
 |15|https://www.amazon.co.jp/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0Rust-%E7%AC%AC2%E7%89%88-Jim-Blandy/dp/4873119782/|`https://www.amazon.co.jp/dp/020530902X` へリダイレクト|
 |16|https://www.amazon.co.jp/s?k=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0+rust+%E7%AC%AC2%E7%89%88|何もしない|
+|17|https://www.amazon.co.jp/dp/B09KZJXDN1?tag=hatena-22&linkCode=osi&th=1&psc=1/|`https://www.amazon.co.jp/dp/B09KZJXDN1` へリダイレクト|
