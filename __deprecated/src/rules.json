@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://www.amazon.co.jp/dp/\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://www\\.amazon\\.co\\.jp/(?:exec/obidos/(?:ASIN|ISBN(?:%3D|=))|o/(?:ASIN|ISBN=)|gp/product(?:product-description)?|dp)/([A-Z0-9]{10})",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  }
+]

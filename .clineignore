@@ -1,0 +1,8 @@
+node_modules/
+**/node_modules/
+.devcontainer/
+package-lock.json
+package.json
+README.md
+.env
+__deprecated/

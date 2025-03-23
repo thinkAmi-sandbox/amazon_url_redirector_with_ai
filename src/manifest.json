@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon URL Redirector",
+  "version": "1.0.0",
+  "description": "Redirects various Amazon URL patterns to the canonical https://www.amazon.co.jp/dp/<ASIN> format",
+  "permissions": [
+    "webNavigation",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.amazon.co.jp/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

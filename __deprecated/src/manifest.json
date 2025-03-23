@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon URL Redirector",
+  "version": "1.0",
+  "description": "Redirects Amazon URLs to a consistent format",
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback", "storage", "tabs"],
+  "host_permissions": ["https://example.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  }
+}
