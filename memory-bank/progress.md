@@ -4,6 +4,7 @@
 - Memory bank has been initialized with project requirements and specifications
 - manifest.json file has been created with Manifest V3 configuration
 - background.js script has been implemented with URL pattern matching and redirection
+- Support for all specified Amazon URL patterns, including the new pattern with query parameters and trailing slash
 
 ## What's Left to Build
 - Add necessary icons for the extension (if needed in the future)

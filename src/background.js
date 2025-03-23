@@ -12,7 +12,7 @@
  */
 function isCanonicalAmazonUrl(url) {
 	const canonicalPattern =
-		/^https:\/\/www\.amazon\.co\.jp\/dp\/[A-Z0-9]{10}(\/?|\?.*)$/;
+		/^https:\/\/www\.amazon\.co\.jp\/dp\/[A-Z0-9]{10}(\/?|\?.*\/?)?$/;
 	return canonicalPattern.test(url);
 }
 
@@ -302,6 +302,21 @@ chrome.runtime.onInstalled.addListener(() => {
 			condition: {
 				regexFilter:
 					"https://www\\.amazon\\.co\\.jp/[^/]+/dp/product-description/([A-Z0-9]{10}).*",
+				resourceTypes: ["main_frame"],
+			},
+		},
+		// /dp/<ASIN>?* (URLs with query parameters, with or without trailing slash)
+		{
+			id: 14,
+			priority: 1,
+			action: {
+				type: "redirect",
+				redirect: {
+					regexSubstitution: "https://www.amazon.co.jp/dp/\\1",
+				},
+			},
+			condition: {
+				regexFilter: "https://www\\.amazon\\.co\\.jp/dp/([A-Z0-9]{10})\\?.*",
 				resourceTypes: ["main_frame"],
 			},
 		},
